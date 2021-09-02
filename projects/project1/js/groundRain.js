@@ -48,6 +48,7 @@ class ground {
     this.width = 800;
     this.height = 100;
     this.blueValue = 15;
+    this.numHits = 0;
   }
 }
 
@@ -55,8 +56,11 @@ class ground {
 function checkCollision() {
   for (let i = 0; i < raindrops.length; i++) {
     if (raindrops[i].yPos >= groundObject.yPos) {
-      groundObject.blueValue++;
+      groundObject.numHits++;
       raindrops.splice(i, 1);
+      if (groundObject.numHits % 10 == 0) {
+        groundObject.blueValue++;
+      }
     }
   }
 }
@@ -66,7 +70,6 @@ function setup() {
   background("#444455");
   createCanvas(800, 600);
   groundObject = new ground();
-  //frameRate(1);
 }
 
 function draw() {
