@@ -89,5 +89,6 @@ function draw() {
   for (let i = 0; i < raindrops.length; i++) {
     raindrops[i].yPos = raindrops[i].yPos + raindrops[i].speed;
   }
+  console.log(groundObject.numHits);
   console.log(groundObject.blueValue);
 }
