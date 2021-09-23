@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Washing Machine Lab</title>
+    <style>
+      .buttons {
+        width: 1200px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      button {
+        width: 150;
+      }
+    </style>
   </head>
   <body>
-    <svg id="canvas" width="1200" height="1200"></svg>
+    <svg id="canvas" width="1200" height="600"></svg>
+    <div class="buttons">
+      <button onclick="selectMachine(0)">Select Machine 1</button>
+      <button onclick="selectMachine(1)">Select Machine 2</button>
+      <button onclick="selectMachine(2)">Select Machine 3</button>
+      <button onclick="selectMachine(3)">Select Machine 4</button>
+      <button onclick="selectMachine(4)">Select Machine 5</button>
+    </div>
+    <div class="buttons">
+      <button onclick="selectMachine(5)">Select Machine 6</button>
+      <button onclick="selectMachine(6)">Select Machine 7</button>
+      <button onclick="selectMachine(7)">Select Machine 8</button>
+      <button onclick="selectMachine(8)">Select Machine 9</button>
+      <button onclick="selectMachine(9)">Select Machine 10</button>
+    </div>
 
     <script src="app/washingMachine.js"></script>
   </body>

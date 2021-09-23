@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Lab</title>
+    <link rel="stylesheet" href="css/animationLab.css" />
+  </head>
+  <body id="body">
+    <h1 id="title">Title</h1>
+    <div id="header"></div>
+    <div id="content">
+      <div id="topRow">
+        <div
+          class="galleryImg"
+          id="1"
+          onmouseover="mouseover1()"
+          onmouseout="mouseout1()"
+          onclick="exit()"
+        ></div>
+        <div
+          class="galleryImg"
+          id="2"
+          onmouseover="mouseover2()"
+          onmouseout="mouseout2()"
+          onclick="exit()"
+        ></div>
+        <div
+          class="galleryImg"
+          id="3"
+          onmouseover="mouseover3()"
+          onmouseout="mouseout3()"
+          onclick="exit()"
+        ></div>
+      </div>
+      <div id="bottomRow">
+        <div
+          class="galleryImg"
+          id="4"
+          onmouseover="mouseover4()"
+          onmouseout="mouseout4()"
+          onclick="exit()"
+        ></div>
+        <div
+          class="galleryImg"
+          id="5"
+          onmouseover="mouseover5()"
+          onmouseout="mouseout5()"
+          onclick="exit()"
+        ></div>
+        <div
+          class="galleryImg"
+          id="6"
+          onmouseover="mouseover6()"
+          onmouseout="mouseout6()"
+          onclick="exit()"
+        ></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="app/animationLab.js"></script>
+  </body>
+</html>

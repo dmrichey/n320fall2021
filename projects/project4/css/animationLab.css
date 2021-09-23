@@ -1,0 +1,38 @@
+#title {
+  color: darkblue;
+  width: 100%;
+}
+
+#header {
+  background-color: darkblue;
+  width: 100%;
+  height: 162px;
+}
+
+#content {
+  height: 540px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#topRow {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#bottomRow {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.galleryImg {
+  height: 100%;
+  width: 30%;
+  background-color: purple;
+}
