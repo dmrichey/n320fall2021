@@ -1,0 +1,85 @@
+body {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+svg {
+  z-index: 1;
+  position: absolute;
+  top: 58px;
+}
+
+#content {
+  width: 400px;
+  height: 400px;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 200px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+
+.gridRow {
+  width: 400px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.p1 {
+  stroke-width: 5;
+  stroke: #f0f0f0;
+}
+
+.p1pawn {
+  fill: #f0f0f0;
+}
+
+.p2 {
+  stroke-width: 5;
+  stroke: #0f0f0f;
+}
+
+.p2pawn {
+  fill: #0f0f0f;
+}
+
+.rook {
+  fill: #f04545;
+}
+
+.knight {
+  fill: #4545f0;
+}
+
+.bishop {
+  fill: #45f045;
+}
+
+.queen {
+  fill: silver;
+}
+
+.king {
+  fill: gold;
+}

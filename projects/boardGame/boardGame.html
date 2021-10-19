@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Board Game - Chess</title>
+  </head>
+  <body>
+    <svg
+      height="400"
+      width="400"
+      onclick="findIndex(event.offsetX, event.offsetY)"
+    >
+      <circle cx="225" cy="375" r="20" class="p1 king" id="p1King" />
+      <circle cx="175" cy="375" r="20" class="p1 queen" id="p1Queen" />
+      <circle cx="125" cy="375" r="20" class="p1 bishop" id="p1Bishop1" />
+      <circle cx="275" cy="375" r="20" class="p1 bishop" id="p1Bishop2" />
+      <circle cx="75" cy="375" r="20" class="p1 knight" id="p1Knight1" />
+      <circle cx="325" cy="375" r="20" class="p1 knight" id="p1Knight2" />
+      <circle cx="25" cy="375" r="20" class="p1 rook" id="p1Rook1" />
+      <circle cx="375" cy="375" r="20" class="p1 rook" id="p1Rook2" />
+      <circle cx="25" cy="325" r="20" class="p1pawn" id="p1Pawn1" />
+      <circle cx="75" cy="325" r="20" class="p1pawn" id="p1Pawn2" />
+      <circle cx="125" cy="325" r="20" class="p1pawn" id="p1Pawn3" />
+      <circle cx="175" cy="325" r="20" class="p1pawn" id="p1Pawn4" />
+      <circle cx="225" cy="325" r="20" class="p1pawn" id="p1Pawn5" />
+      <circle cx="275" cy="325" r="20" class="p1pawn" id="p1Pawn6" />
+      <circle cx="325" cy="325" r="20" class="p1pawn" id="p1Pawn7" />
+      <circle cx="375" cy="325" r="20" class="p1pawn" id="p1Pawn8" />
+
+      <circle cx="225" cy="25" r="20" class="p2 king" id="p2King" />
+      <circle cx="175" cy="25" r="20" class="p2 queen" id="p2Queen" />
+      <circle cx="125" cy="25" r="20" class="p2 bishop" id="p2Bishop1" />
+      <circle cx="275" cy="25" r="20" class="p2 bishop" id="p2Bishop2" />
+      <circle cx="75" cy="25" r="20" class="p2 knight" id="p2Knight1" />
+      <circle cx="325" cy="25" r="20" class="p2 knight" id="p2Knight2" />
+      <circle cx="25" cy="25" r="20" class="p2 rook" id="p2Rook1" />
+      <circle cx="375" cy="25" r="20" class="p2 rook" id="p2Rook2" />
+      <circle cx="25" cy="75" r="20" class="p2pawn" id="p2Pawn1" />
+      <circle cx="75" cy="75" r="20" class="p2pawn" id="p2Pawn2" />
+      <circle cx="125" cy="75" r="20" class="p2pawn" id="p2Pawn3" />
+      <circle cx="175" cy="75" r="20" class="p2pawn" id="p2Pawn4" />
+      <circle cx="225" cy="75" r="20" class="p2pawn" id="p2Pawn5" />
+      <circle cx="275" cy="75" r="20" class="p2pawn" id="p2Pawn6" />
+      <circle cx="325" cy="75" r="20" class="p2pawn" id="p2Pawn7" />
+      <circle cx="375" cy="75" r="20" class="p2pawn" id="p2Pawn8" />
+    </svg>
+
+    <div id="content"></div>
+
+    <div id="info">
+      <button onclick="confirmPiece()">Confirm Piece</button>
+      <p id="text"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="app/boardGame.js"></script>
+  </body>
+</html>
